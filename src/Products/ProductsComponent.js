@@ -2,7 +2,8 @@ import React from 'react';
 import {TransformProductByCategory} from './ProductTransformer';
 import SearchBox from './SearchBox';
 import ProductTableComponent from './ProductTableComponent';
-import './ProductsComponent.css'
+import './ProductsComponent.css';
+import Title from './Title';
 
 export default class ProductsComponent extends React.Component {
     constructor(props) {
@@ -13,6 +14,7 @@ export default class ProductsComponent extends React.Component {
             showOnlyStocked: false,
             isLoading: true
         };
+        this.text = "Plain React";
         this.toggleStockedProducts = this.toggleStockedProducts.bind(this);
         this.onSearch = this.onSearch.bind(this);
     }
@@ -25,6 +27,8 @@ export default class ProductsComponent extends React.Component {
         }
         return (
             <div className='container'>
+                <Title text={this.text} />
+                <br/>
                 <SearchBox onSearch={this.onSearch} />
                 <label>Show only Stocked products </label>               
                 
