@@ -1,4 +1,4 @@
-Code for example outlined in "Thinking in React" article @ https://reactjs.org/docs/thinking-in-react.html
+Code for example outlined in "Thinking in React" article @ https://reactjs.org/docs/thinking-in-react.html. Implemented using both "Plain React" and "Redux and redux-thunk"
 
 ### `npm start`
 
